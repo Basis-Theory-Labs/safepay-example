@@ -17,6 +17,7 @@ const Circle = () => (
 export const Container = ({ children }: PropsWithChildren) => (
   <Box
     sx={{
+      background: 'linear-gradient(214.58deg, #411FA9 22.45%, #009FAC 92.89%)',
       height: '100vh',
       p: 6,
       filter:
