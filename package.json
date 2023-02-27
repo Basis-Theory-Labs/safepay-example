@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "source": "src/index.ts",
-  "main": "dist/index.mjs",
+  "browser": "dist/index.js",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "rimraf dist && parcel build"
@@ -29,8 +29,8 @@
   "prettier": "@basis-theory/eslint-config/prettier",
   "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
   "targets": {
-    "main": {
-      "includeNodeModules": true,
+    "browser": {
+      "includeNodeModules": false,
       "sourceMap": false
     }
   }
