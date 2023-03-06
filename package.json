@@ -2,11 +2,10 @@
   "name": "safepay-example",
   "version": "1.0.0",
   "license": "MIT",
-  "source": "src/index.ts",
   "browser": "dist/index.js",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "rimraf dist && parcel build"
+    "build": "rimraf dist && parcel build module.ts"
   },
   "devDependencies": {
     "@basis-theory/basis-theory-react": "^1.10.0",
@@ -24,7 +23,8 @@
     "process": "^0.11.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rimraf": "^4.1.2"
+    "rimraf": "^4.1.2",
+    "rollup": "^3.18.0"
   },
   "prettier": "@basis-theory/eslint-config/prettier",
   "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",

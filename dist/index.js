@@ -1,84 +1,66 @@
-const require = () => window.Buffer;
-
-const $ewJNR$buffer = require('buffer');
-
-require('fs');
-require('path');
-
 function $parcel$export(e, n, v, s) {
-  Object.defineProperty(e, n, {
-    get: v,
-    set: s,
-    enumerable: true,
-    configurable: true,
-  });
+  Object.defineProperty(e, n, {get: v, set: s, enumerable: true, configurable: true});
+}
+function $parcel$interopDefault(a) {
+  return a && a.__esModule ? a.default : a;
 }
 
-$parcel$export(module.exports, 'project', function () {
-  return $25cb9672b013a3de$export$ab03b6763ed7026f;
-});
+$parcel$export(module.exports, "project", function () { return $5395a0f1ff554684$export$ab03b6763ed7026f; });
+/* eslint-disable import/extensions,import/no-unresolved,@typescript-eslint/ban-ts-comment */ // @ts-ignore
+var $60132404ee6e29eb$exports = {};
+$60132404ee6e29eb$exports = "import React from 'react';\nimport {\n  BasisTheoryProvider,\n  useBasisTheory,\n} from '@basis-theory/basis-theory-react';\nimport { alpha, createTheme, CssBaseline, ThemeProvider } from '@mui/material';\nimport { Checkout } from './Checkout';\nimport { Container } from './Container';\n\nconst theme = createTheme({\n  palette: {\n    mode: 'dark',\n    primary: {\n      main: '#00D2EF',\n      contrastText: alpha('#000', 0.87),\n    },\n    background: {\n      default: '#0D0A2C',\n    },\n    text: {\n      primary: '#EBEDFF',\n      secondary: '#E2E6FFB2',\n    },\n  },\n  typography: {\n    fontFamily: \"'Inter'\",\n    h1: {\n      fontFamily: \"'Poppins'\",\n      fontSize: '17px',\n    },\n    h2: {\n      fontFamily: \"'Outfit'\",\n      fontSize: '16px',\n    },\n  },\n  components: {\n    MuiButton: {\n      styleOverrides: {\n        contained: {\n          textTransform: 'none',\n          fontWeight: '600',\n        },\n      },\n    },\n  },\n});\n\nconst App = () => {\n  const { bt } = useBasisTheory('test_123456789', { elements: true });\n\n  return (\n    <ThemeProvider theme={theme}>\n      <CssBaseline />\n      <BasisTheoryProvider bt={bt}>\n        <Container>\n          <Checkout />\n        </Container>\n      </BasisTheoryProvider>\n    </ThemeProvider>\n  );\n};\n\nexport default App;\nexport { App };\n";
 
-const $17825bb08c8e6cac$require$Buffer = $ewJNR$buffer.Buffer;
-const $17825bb08c8e6cac$var$App = $17825bb08c8e6cac$require$Buffer
-  .from(
-    'aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsKICBCYXNpc1RoZW9yeVByb3ZpZGVyLAogIHVzZUJhc2lzVGhlb3J5LAp9IGZyb20gJ0BiYXNpcy10aGVvcnkvYmFzaXMtdGhlb3J5LXJlYWN0JzsKaW1wb3J0IHsgYWxwaGEsIGNyZWF0ZVRoZW1lLCBDc3NCYXNlbGluZSwgVGhlbWVQcm92aWRlciB9IGZyb20gJ0BtdWkvbWF0ZXJpYWwnOwppbXBvcnQgeyBDaGVja291dCB9IGZyb20gJy4vQ2hlY2tvdXQnOwppbXBvcnQgeyBDb250YWluZXIgfSBmcm9tICcuL0NvbnRhaW5lcic7Cgpjb25zdCB0aGVtZSA9IGNyZWF0ZVRoZW1lKHsKICBwYWxldHRlOiB7CiAgICBtb2RlOiAnZGFyaycsCiAgICBwcmltYXJ5OiB7CiAgICAgIG1haW46ICcjMDBEMkVGJywKICAgICAgY29udHJhc3RUZXh0OiBhbHBoYSgnIzAwMCcsIDAuODcpLAogICAgfSwKICAgIGJhY2tncm91bmQ6IHsKICAgICAgZGVmYXVsdDogJyMwRDBBMkMnLAogICAgfSwKICAgIHRleHQ6IHsKICAgICAgcHJpbWFyeTogJyNFQkVERkYnLAogICAgICBzZWNvbmRhcnk6ICcjRTJFNkZGQjInLAogICAgfSwKICB9LAogIHR5cG9ncmFwaHk6IHsKICAgIGZvbnRGYW1pbHk6ICInSW50ZXInIiwKICAgIGgxOiB7CiAgICAgIGZvbnRGYW1pbHk6ICInUG9wcGlucyciLAogICAgICBmb250U2l6ZTogJzE3cHgnLAogICAgfSwKICAgIGgyOiB7CiAgICAgIGZvbnRGYW1pbHk6ICInT3V0Zml0JyIsCiAgICAgIGZvbnRTaXplOiAnMTZweCcsCiAgICB9LAogIH0sCiAgY29tcG9uZW50czogewogICAgTXVpQnV0dG9uOiB7CiAgICAgIHN0eWxlT3ZlcnJpZGVzOiB7CiAgICAgICAgY29udGFpbmVkOiB7CiAgICAgICAgICB0ZXh0VHJhbnNmb3JtOiAnbm9uZScsCiAgICAgICAgICBmb250V2VpZ2h0OiAnNjAwJywKICAgICAgICB9LAogICAgICB9LAogICAgfSwKICB9LAp9KTsKCmNvbnN0IEFwcCA9ICgpID0+IHsKICBjb25zdCB7IGJ0IH0gPSB1c2VCYXNpc1RoZW9yeSgndGVzdF8xMjM0NTY3ODknLCB7IGVsZW1lbnRzOiB0cnVlIH0pOwoKICByZXR1cm4gKAogICAgPFRoZW1lUHJvdmlkZXIgdGhlbWU9e3RoZW1lfT4KICAgICAgPENzc0Jhc2VsaW5lIC8+CiAgICAgIDxCYXNpc1RoZW9yeVByb3ZpZGVyIGJ0PXtidH0+CiAgICAgICAgPENvbnRhaW5lcj4KICAgICAgICAgIDxDaGVja291dCAvPgogICAgICAgIDwvQ29udGFpbmVyPgogICAgICA8L0Jhc2lzVGhlb3J5UHJvdmlkZXI+CiAgICA8L1RoZW1lUHJvdmlkZXI+CiAgKTsKfTsKCmV4cG9ydCBkZWZhdWx0IEFwcDsKZXhwb3J0IHsgQXBwIH07Cg==',
-    'base64'
-  )
-  .toString();
-const $17825bb08c8e6cac$var$Checkout = $17825bb08c8e6cac$require$Buffer
-  .from(
-    'aW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JzsKaW1wb3J0IHsgQ2FyZEVsZW1lbnQsIHVzZUJhc2lzVGhlb3J5IH0gZnJvbSAnQGJhc2lzLXRoZW9yeS9iYXNpcy10aGVvcnktcmVhY3QnOwppbXBvcnQgeyBCdXR0b24sIFR5cG9ncmFwaHkgfSBmcm9tICdAbXVpL21hdGVyaWFsJzsKaW1wb3J0IHsgQ2FyZFdyYXBwZXIgfSBmcm9tICcuL0NhcmRXcmFwcGVyJzsKCmV4cG9ydCBjb25zdCBDaGVja291dCA9ICgpID0+IHsKICBjb25zdCB7IGJ0IH0gPSB1c2VCYXNpc1RoZW9yeSgpOwoKICByZXR1cm4gKAogICAgPD4KICAgICAgPFR5cG9ncmFwaHkgdmFyaWFudD0iaDIiPkNoZWNrb3V0PC9UeXBvZ3JhcGh5PgogICAgICA8VHlwb2dyYXBoeSBjb2xvcj0idGV4dC5zZWNvbmRhcnkiIHZhcmlhbnQ9ImJvZHkyIj4KICAgICAgICBUeXBlIGluIHlvdXIgY3JlZGl0IGNhcmQgbnVtYmVyLgogICAgICA8L1R5cG9ncmFwaHk+CiAgICAgIDxDYXJkV3JhcHBlcj4KICAgICAgICA8Q2FyZEVsZW1lbnQKICAgICAgICAgIGlkPSJteS1jYXJkIgogICAgICAgICAgc3R5bGU9e3sKICAgICAgICAgICAgYmFzZTogewogICAgICAgICAgICAgIGNvbG9yOiAnI0VCRURGRicsCiAgICAgICAgICAgIH0sCiAgICAgICAgICB9fQogICAgICAgIC8+CiAgICAgIDwvQ2FyZFdyYXBwZXI+CiAgICAgIDxCdXR0b24gY29sb3I9InByaW1hcnkiIHZhcmlhbnQ9ImNvbnRhaW5lZCI+CiAgICAgICAgU3VibWl0CiAgICAgIDwvQnV0dG9uPgogICAgPC8+CiAgKTsKfTsK',
-    'base64'
-  )
-  .toString();
-const $17825bb08c8e6cac$var$Container = $17825bb08c8e6cac$require$Buffer
-  .from(
-    'aW1wb3J0IFJlYWN0LCB7IFByb3BzV2l0aENoaWxkcmVuIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBCb3gsIERpdmlkZXIsIFR5cG9ncmFwaHkgfSBmcm9tICdAbXVpL21hdGVyaWFsJzsKCmNvbnN0IENpcmNsZSA9ICgpID0+ICgKICA8Qm94CiAgICBzeD17ewogICAgICB3aWR0aDogJzEwcHgnLAogICAgICBoZWlnaHQ6ICcxMHB4JywKICAgICAgYmFja2dyb3VuZDogJ3JnYmEoMTk2LCAyMDAsIDIyNCwgMC4yKScsCiAgICAgIGJvcmRlclJhZGl1czogMiwKICAgICAgbWFyZ2luUmlnaHQ6ICc2cHgnLAogICAgICBib3JkZXI6ICcwLjc5OTc0OXB4IHNvbGlkIHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wOCknLAogICAgfX0KICAvPgopOwoKZXhwb3J0IGNvbnN0IENvbnRhaW5lciA9ICh7IGNoaWxkcmVuIH06IFByb3BzV2l0aENoaWxkcmVuKSA9PiAoCiAgPEJveAogICAgc3g9e3sKICAgICAgYmFja2dyb3VuZDogJ2xpbmVhci1ncmFkaWVudCgyMTQuNThkZWcsICM0MTFGQTkgMjIuNDUlLCAjMDA5RkFDIDkyLjg5JSknLAogICAgICBoZWlnaHQ6ICcxMDB2aCcsCiAgICAgIHA6IDYsCiAgICAgIGZpbHRlcjoKICAgICAgICAnZHJvcC1zaGFkb3coMHB4IDEwMHB4IDgwcHggcmdiYSgwLCAwLCAwLCAwLjEzKSkgZHJvcC1zaGFkb3coMHB4IDQxLjc3NzZweCAzMy40MjIxcHggcmdiYSgwLCAwLCAwLCAwLjA5MzQ1MTEpKSBkcm9wLXNoYWRvdygwcHggMjIuMzM2M3B4IDE3Ljg2OXB4IHJnYmEoMCwgMCwgMCwgMC4wNzc0OTM5KSkgZHJvcC1zaGFkb3coMHB4IDEyLjUyMTZweCAxMC4wMTcycHggcmdiYSgwLCAwLCAwLCAwLjA2NSkpIGRyb3Atc2hhZG93KDBweCA2LjY1MDFweCA1LjMyMDA4cHggcmdiYSgwLCAwLCAwLCAwLjA1MjUwNjEpKSBkcm9wLXNoYWRvdygwcHggMi43NjcyNnB4IDIuMjEzODFweCByZ2JhKDAsIDAsIDAsIDAuMDM2NTQ4OSkpJywKICAgIH19CiAgPgogICAgPEJveAogICAgICBzeD17ewogICAgICAgIGJvcmRlcjogJzAuOTk5Njg2cHggc29saWQgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjEpJywKICAgICAgICBib3JkZXJSYWRpdXM6IDIsCiAgICAgICAgYmFja2dyb3VuZDoKICAgICAgICAgICdsaW5lYXItZ3JhZGllbnQoMTIzLjc2ZGVnLCAjMUMyMDM2IDIxLjI4JSwgIzBEMTAyNSAxMTIuMzklKScsCiAgICAgICAgYm94U2hhZG93OgogICAgICAgICAgJzBweCAxMDBweCA4MHB4IHJnYmEoMCwgMCwgMCwgMC4xNCksIDBweCA0MS43Nzc2cHggMzMuNDIyMXB4IHJnYmEoMCwgMCwgMCwgMC4xMDA2NCksIDBweCAyMi4zMzYzcHggMTcuODY5cHggcmdiYSgwLCAwLCAwLCAwLjA4MzQ1NSksIDBweCAxMi41MjE2cHggMTAuMDE3MnB4IHJnYmEoMCwgMCwgMCwgMC4wNyksIDBweCA2LjY1MDFweCA1LjMyMDA4cHggcmdiYSgwLCAwLCAwLCAwLjA1NjU0NSksIDBweCAyLjc2NzI2cHggMi4yMTM4MXB4IHJnYmEoMCwgMCwgMCwgMC4wMzkzNjA0KScsCiAgICAgIH19CiAgICA+CiAgICAgIDxCb3gKICAgICAgICBzeD17ewogICAgICAgICAgZGlzcGxheTogJ2ZsZXgnLAogICAgICAgICAgYmFja2dyb3VuZDogJ3JnYmEoMjU1LCAyNTUsIDI1NSwgMC4wNiknLAogICAgICAgICAgcGFkZGluZzogJzExcHggMTRweCcsCiAgICAgICAgfX0KICAgICAgPgogICAgICAgIDxDaXJjbGUgLz4KICAgICAgICA8Q2lyY2xlIC8+CiAgICAgICAgPENpcmNsZSAvPgogICAgICA8L0JveD4KICAgICAgPEJveCBweD17NX0gcHk9ezR9PgogICAgICAgIDxCb3ggYWxpZ25JdGVtcz0iY2VudGVyIiBkaXNwbGF5PSJmbGV4Ij4KICAgICAgICAgIDxzdmcKICAgICAgICAgICAgZmlsbD0ibm9uZSIKICAgICAgICAgICAgaGVpZ2h0PSIyNiIKICAgICAgICAgICAgdmlld0JveD0iMCAwIDIzIDI2IgogICAgICAgICAgICB3aWR0aD0iMjMiCiAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgICAgICAgID4KICAgICAgICAgICAgPHBhdGgKICAgICAgICAgICAgICBkPSJNMTIuMzIyNCAwLjQ2MjkwNkMxMS42NTkzIDAuMTY4MiAxMC45MDI0IDAuMTY4MiAxMC4yMzkzIDAuNDYyOTA2TDEuNTIyOTUgNC4zMzY4NUMwLjU5Njg0NCA0Ljc0ODQ2IDAgNS42NjY4NiAwIDYuNjgwMzJWMTIuNTM0M0MwIDE5LjI3MTYgNC41MTQ2MSAyMy4xODAzIDEwLjY3NDUgMjQuODU0NkMxMS4wNzE1IDI0Ljk2MjUgMTEuNDkwMyAyNC45NjI1IDExLjg4NzMgMjQuODU0NkMxOC4wNDcxIDIzLjE4MDMgMjIuNTYxOCAxOS4yNzE2IDIyLjU2MTggMTIuNTM0M1Y2LjY4MDMyQzIyLjU2MTggNS42NjY4NiAyMS45NjQ5IDQuNzQ4NDYgMjEuMDM4OCA0LjMzNjg2TDEyLjMyMjQgMC40NjI5MDZaIgogICAgICAgICAgICAgIGZpbGw9IiM3NDc5RkYiCiAgICAgICAgICAgIC8+CiAgICAgICAgICAgIDxwYXRoCiAgICAgICAgICAgICAgZD0iTTEyLjUwMiA3LjA2NTE4QzExLjkyOTEgNy4wMjYxNyAxMS4zNDU0IDcuMTkxNzMgMTAuODc4OCA3LjUyNjE5QzEwLjM1NzcgNy44OTA2OCA5Ljk4ODMzIDguNDYxNTUgOS44NjQzNSA5LjA4NDc4QzkuNjg4MjYgOS45MjMxMSA5Ljk3OTg2IDEwLjg0IDEwLjYwOCAxMS40MjI3QzEwLjY5NzMgMTEuNTEzIDEwLjgxOSAxMS41NzkgMTAuODY4NSAxMS43MDIyQzEwLjkxMzQgMTEuODA4NyAxMC45MTg4IDExLjk0NDIgMTAuODQ3NSAxMi4wNDFDMTAuNzk4OSAxMi4xMDUyIDEwLjcxMjcgMTIuMTEzNCAxMC42MzgzIDEyLjExMjRDMTAuMTI0NCAxMi4xMTEzIDkuNjEwNDkgMTIuMTEzNCA5LjA5NjYxIDEyLjExMTNDOC41MTk4NCAxMi4xMDc3IDcuOTM5NzMgMTEuOTI4OCA3LjQ3Nzk1IDExLjU3OTJDNy4yODEwOCAxMS40MzM0IDcuMTExMTUgMTEuMjUyIDYuOTgyMDQgMTEuMDQzNUM2Ljg5NCAxMC45MDM5IDYuNjc0MDIgMTAuODk0NyA2LjU3MTg2IDExLjAyMzNDNi4wOTA1OCAxMS41Njk3IDUuODA5NTEgMTIuMjgzNiA1Ljc2NzE1IDEzLjAwOTJDNS43Mjg2NSAxMy42MjU4IDUuODU3MjUgMTQuMjQzOSA2LjA4NTcgMTQuODE1QzYuMzQ4NTQgMTUuNTA3MyA2Ljg5NCAxNi4wNTY4IDcuNTE2NDYgMTYuNDM5NkM3LjkzODk2IDE2LjY5ODUgOC4zOTYzNyAxNi45MDIxIDguODc0MzIgMTcuMDM0QzkuNDU3MjUgMTcuMTk2NSAxMC4wNTk5IDE3LjI4MjUgMTAuNjYzNyAxNy4zMDk3QzExLjY4NzggMTcuMzUyNiAxMi43MzI1IDE3LjIyMyAxMy42ODM4IDE2LjgyODJDMTQuMTA4NiAxNi42NDc3IDE0LjUyNDcgMTYuNDI1NCAxNC44NTk3IDE2LjEwM0MxNS4yNjgxIDE1LjcxNyAxNS41NTIyIDE1LjE5NjkgMTUuNjMxOCAxNC42Mzg5QzE1LjcwMzkgMTQuMTE0OCAxNS42MzQxIDEzLjU2NzggMTUuNDEyNiAxMy4wODU3QzE1LjIxMzcgMTIuNjQ3MyAxNC45MDU0IDEyLjI2NzEgMTQuNTU3MyAxMS45MzgxQzE0LjQ3MDMgMTEuODU0NCAxNC4zNjg0IDExLjc4MDIgMTQuMzEyMiAxMS42NzA2QzE0LjIyMzYgMTEuNTA2NiAxNC4yMzEzIDExLjI5NDggMTQuMzM0MyAxMS4xMzg4QzE0LjQ2NjIgMTAuOTQ3NSAxNC42NDQzIDEwLjc5MTcgMTQuODQyMiAxMC42NzE2QzE1LjMxOTQgMTAuMzc2OSAxNS43NTk0IDkuOTg3MDIgMTYuMDExMiA5LjQ3Nzc2QzE2LjA1ODcgOS4zOTg3IDE1Ljk5NTMgOS4yODcwNCAxNS45MDMxIDkuMjg3M0MxNS41Njc5IDkuMjU5NTggMTUuMjMyNCA5LjIyMzEzIDE0LjkwMzMgOS4xNTEyNkMxNC44NDQ1IDkuMTM5NDUgMTQuODEyMiA5LjA4MjcyIDE0LjgwMjQgOS4wMjc1M0MxNC42ODEzIDguNDg4NSAxNC4zNzQgNy45OTQzOCAxMy45NDg1IDcuNjQyNDdDMTMuNTQzNCA3LjMwMzY0IDEzLjAyOTUgNy4wOTY1IDEyLjUwMiA3LjA2NTE4WiIKICAgICAgICAgICAgICBmaWxsPSJ3aGl0ZSIKICAgICAgICAgICAgLz4KICAgICAgICAgIDwvc3ZnPgogICAgICAgICAgPFR5cG9ncmFwaHkgc3g9e3sgbWw6ICcxMHB4JyB9fSB2YXJpYW50PSJoMSI+CiAgICAgICAgICAgIHsnU2FmZSBQYXknfQogICAgICAgICAgPC9UeXBvZ3JhcGh5PgogICAgICAgIDwvQm94PgogICAgICAgIDxEaXZpZGVyIHN4PXt7IG15OiAyIH19IC8+CiAgICAgICAge2NoaWxkcmVufQogICAgICA8L0JveD4KICAgIDwvQm94PgogIDwvQm94PgopOwo=',
-    'base64'
-  )
-  .toString();
-const $17825bb08c8e6cac$var$CardWrapper = $17825bb08c8e6cac$require$Buffer
-  .from(
-    'aW1wb3J0IFJlYWN0LCB7IFByb3BzV2l0aENoaWxkcmVuIH0gZnJvbSAncmVhY3QnOwppbXBvcnQgeyBhbHBoYSwgQm94LCB1c2VUaGVtZSB9IGZyb20gJ0BtdWkvbWF0ZXJpYWwnOwoKZXhwb3J0IGNvbnN0IENhcmRXcmFwcGVyID0gKHsgY2hpbGRyZW4gfTogUHJvcHNXaXRoQ2hpbGRyZW4pID0+IHsKICBjb25zdCB0aGVtZSA9IHVzZVRoZW1lKCk7CgogIHJldHVybiAoCiAgICA8Qm94CiAgICAgIHN4PXt7CiAgICAgICAgYmFja2dyb3VuZENvbG9yOiBhbHBoYSh0aGVtZS5wYWxldHRlLmNvbW1vbi53aGl0ZSwgMC4xMSksCiAgICAgICAgYm94U2hhZG93OgogICAgICAgICAgJzBweCAycHggNnB4IHJnYmEoNCwgNiwgMTcsIDAuMiksIGluc2V0IDBweCAwcHggMHB4IDFweCByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMSknLAogICAgICAgIGJvcmRlclJhZGl1czogMiwKICAgICAgICBteTogMiwKICAgICAgICBwOiAxLjUsCiAgICAgIH19CiAgICA+CiAgICAgIHtjaGlsZHJlbn0KICAgIDwvQm94PgogICk7Cn07Cg==',
-    'base64'
-  )
-  .toString();
-const $17825bb08c8e6cac$export$3a444357c5f65f65 = {
-  '/App.tsx': {
-    code: $17825bb08c8e6cac$var$App,
-    hidden: true,
-  },
-  '/Container.tsx': {
-    code: $17825bb08c8e6cac$var$Container,
-    hidden: true,
-  },
-  '/Checkout.tsx': {
-    code: $17825bb08c8e6cac$var$Checkout,
-    active: true,
-  },
-  '/CardWrapper.tsx': {
-    code: $17825bb08c8e6cac$var$CardWrapper,
-  },
-};
 
-const $25cb9672b013a3de$export$ab03b6763ed7026f = {
-  customSetup: {
-    dependencies: {
-      '@basis-theory/basis-theory-react': 'latest',
-      '@mui/material': '^5',
-      '@emotion/react': '^11',
-      '@emotion/styled': '^11',
+var $3b4a0e9b1b883ddb$exports = {};
+$3b4a0e9b1b883ddb$exports = "import React, { PropsWithChildren } from 'react';\nimport { alpha, Box, useTheme } from '@mui/material';\n\nexport const CardWrapper = ({ children }: PropsWithChildren) => {\n  const theme = useTheme();\n\n  return (\n    <Box\n      sx={{\n        backgroundColor: alpha(theme.palette.common.white, 0.11),\n        boxShadow:\n          '0px 2px 6px rgba(4, 6, 17, 0.2), inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1)',\n        borderRadius: 2,\n        my: 2,\n        p: 1.5,\n      }}\n    >\n      {children}\n    </Box>\n  );\n};\n";
+
+
+var $12a5e40664782974$exports = {};
+$12a5e40664782974$exports = "import React from 'react';\nimport { CardElement, useBasisTheory } from '@basis-theory/basis-theory-react';\nimport { Button, Typography } from '@mui/material';\nimport { CardWrapper } from './CardWrapper';\n\nexport const Checkout = () => {\n  const { bt } = useBasisTheory();\n\n  return (\n    <>\n      <Typography variant=\"h2\">Checkout</Typography>\n      <Typography color=\"text.secondary\" variant=\"body2\">\n        Type in your credit card number.\n      </Typography>\n      <CardWrapper>\n        <CardElement\n          id=\"my-card\"\n          style={{\n            base: {\n              color: '#EBEDFF',\n            },\n          }}\n        />\n      </CardWrapper>\n      <Button color=\"primary\" variant=\"contained\">\n        Submit\n      </Button>\n    </>\n  );\n};\n";
+
+
+var $c3aee4cff9924ef2$exports = {};
+$c3aee4cff9924ef2$exports = "import React, { PropsWithChildren } from 'react';\nimport { Box, Divider, Typography } from '@mui/material';\n\nconst Circle = () => (\n  <Box\n    sx={{\n      width: '10px',\n      height: '10px',\n      background: 'rgba(196, 200, 224, 0.2)',\n      borderRadius: 2,\n      marginRight: '6px',\n      border: '0.799749px solid rgba(255, 255, 255, 0.08)',\n    }}\n  />\n);\n\nexport const Container = ({ children }: PropsWithChildren) => (\n  <Box\n    sx={{\n      background: 'linear-gradient(214.58deg, #411FA9 22.45%, #009FAC 92.89%)',\n      height: '100vh',\n      p: 6,\n      filter:\n        'drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.13)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0934511)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0774939)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.065)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0525061)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0365489))',\n    }}\n  >\n    <Box\n      sx={{\n        border: '0.999686px solid rgba(255, 255, 255, 0.1)',\n        borderRadius: 2,\n        background:\n          'linear-gradient(123.76deg, #1C2036 21.28%, #0D1025 112.39%)',\n        boxShadow:\n          '0px 100px 80px rgba(0, 0, 0, 0.14), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.10064), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.083455), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.07), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.056545), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0393604)',\n      }}\n    >\n      <Box\n        sx={{\n          display: 'flex',\n          background: 'rgba(255, 255, 255, 0.06)',\n          padding: '11px 14px',\n        }}\n      >\n        <Circle />\n        <Circle />\n        <Circle />\n      </Box>\n      <Box px={5} py={4}>\n        <Box alignItems=\"center\" display=\"flex\">\n          <svg\n            fill=\"none\"\n            height=\"26\"\n            viewBox=\"0 0 23 26\"\n            width=\"23\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n          >\n            <path\n              d=\"M12.3224 0.462906C11.6593 0.1682 10.9024 0.1682 10.2393 0.462906L1.52295 4.33685C0.596844 4.74846 0 5.66686 0 6.68032V12.5343C0 19.2716 4.51461 23.1803 10.6745 24.8546C11.0715 24.9625 11.4903 24.9625 11.8873 24.8546C18.0471 23.1803 22.5618 19.2716 22.5618 12.5343V6.68032C22.5618 5.66686 21.9649 4.74846 21.0388 4.33686L12.3224 0.462906Z\"\n              fill=\"#7479FF\"\n            />\n            <path\n              d=\"M12.502 7.06518C11.9291 7.02617 11.3454 7.19173 10.8788 7.52619C10.3577 7.89068 9.98833 8.46155 9.86435 9.08478C9.68826 9.92311 9.97986 10.84 10.608 11.4227C10.6973 11.513 10.819 11.579 10.8685 11.7022C10.9134 11.8087 10.9188 11.9442 10.8475 12.041C10.7989 12.1052 10.7127 12.1134 10.6383 12.1124C10.1244 12.1113 9.61049 12.1134 9.09661 12.1113C8.51984 12.1077 7.93973 11.9288 7.47795 11.5792C7.28108 11.4334 7.11115 11.252 6.98204 11.0435C6.894 10.9039 6.67402 10.8947 6.57186 11.0233C6.09058 11.5697 5.80951 12.2836 5.76715 13.0092C5.72865 13.6258 5.85725 14.2439 6.0857 14.815C6.34854 15.5073 6.894 16.0568 7.51646 16.4396C7.93896 16.6985 8.39637 16.9021 8.87432 17.034C9.45725 17.1965 10.0599 17.2825 10.6637 17.3097C11.6878 17.3526 12.7325 17.223 13.6838 16.8282C14.1086 16.6477 14.5247 16.4254 14.8597 16.103C15.2681 15.717 15.5522 15.1969 15.6318 14.6389C15.7039 14.1148 15.6341 13.5678 15.4126 13.0857C15.2137 12.6473 14.9054 12.2671 14.5573 11.9381C14.4703 11.8544 14.3684 11.7802 14.3122 11.6706C14.2236 11.5066 14.2313 11.2948 14.3343 11.1388C14.4662 10.9475 14.6443 10.7917 14.8422 10.6716C15.3194 10.3769 15.7594 9.98702 16.0112 9.47776C16.0587 9.3987 15.9953 9.28704 15.9031 9.2873C15.5679 9.25958 15.2324 9.22313 14.9033 9.15126C14.8445 9.13945 14.8122 9.08272 14.8024 9.02753C14.6813 8.4885 14.374 7.99438 13.9485 7.64247C13.5434 7.30364 13.0295 7.0965 12.502 7.06518Z\"\n              fill=\"white\"\n            />\n          </svg>\n          <Typography sx={{ ml: '10px' }} variant=\"h1\">\n            {'Safe Pay'}\n          </Typography>\n        </Box>\n        <Divider sx={{ my: 2 }} />\n        {children}\n      </Box>\n    </Box>\n  </Box>\n);\n";
+
+
+const $0ee0ac04974f96cc$export$3a444357c5f65f65 = {
+    "/App.tsx": {
+        hidden: true,
+        code: (0, (/*@__PURE__*/$parcel$interopDefault($60132404ee6e29eb$exports)))
     },
-  },
-  files: $17825bb08c8e6cac$export$3a444357c5f65f65,
-  options: {
-    externalResources: [
-      'https://fonts.googleapis.com',
-      'https://fonts.gstatic.com',
-      'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500&family=Poppins:wght@600&display=swap',
-    ],
-  },
-  template: 'react-ts',
+    "/Container.tsx": {
+        hidden: true,
+        code: (0, (/*@__PURE__*/$parcel$interopDefault($c3aee4cff9924ef2$exports)))
+    },
+    "/Checkout.tsx": {
+        active: true,
+        code: (0, (/*@__PURE__*/$parcel$interopDefault($12a5e40664782974$exports)))
+    },
+    "/CardWrapper.tsx": {
+        code: (0, (/*@__PURE__*/$parcel$interopDefault($3b4a0e9b1b883ddb$exports)))
+    }
 };
+ /* eslint-enable import/extensions,import/no-unresolved,@typescript-eslint/ban-ts-comment */ 
 
-window.SafePayExampleProject = $25cb9672b013a3de$export$ab03b6763ed7026f;
+const $5395a0f1ff554684$export$ab03b6763ed7026f = {
+    customSetup: {
+        dependencies: {
+            "@basis-theory/basis-theory-react": "latest",
+            "@mui/material": "^5",
+            "@emotion/react": "^11",
+            "@emotion/styled": "^11"
+        }
+    },
+    files: $0ee0ac04974f96cc$export$3a444357c5f65f65,
+    options: {
+        externalResources: [
+            "https://fonts.googleapis.com",
+            "https://fonts.gstatic.com",
+            "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500&family=Poppins:wght@600&display=swap"
+        ]
+    },
+    template: "react-ts"
+};
+window.SafePayExampleProject = $5395a0f1ff554684$export$ab03b6763ed7026f;
+
+
