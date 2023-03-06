@@ -28,5 +28,3 @@ declare global {
 }
 
 window.SafePayExampleProject = project;
-
-export { project };
