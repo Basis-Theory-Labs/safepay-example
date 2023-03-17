@@ -20,8 +20,6 @@ export const Container = ({ children }: PropsWithChildren) => (
       background: 'linear-gradient(214.58deg, #411FA9 22.45%, #009FAC 92.89%)',
       height: '100vh',
       p: 6,
-      filter:
-        'drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.13)) drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0934511)) drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0774939)) drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.065)) drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0525061)) drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0365489))',
     }}
   >
     <Box
