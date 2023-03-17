@@ -37,6 +37,8 @@ export const Container = ({ children }: PropsWithChildren) => (
       <Box
         sx={{
           display: 'flex',
+          borderTopLeftRadius: 8,
+          borderTopRightRadius: 8,
           background: 'rgba(255, 255, 255, 0.06)',
           padding: '11px 14px',
         }}
