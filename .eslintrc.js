@@ -6,5 +6,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     'react/jsx-curly-brace-presence': 'off',
     'node/no-unpublished-import': 'off',
+    'react/display-name': 'off',
   },
 };
