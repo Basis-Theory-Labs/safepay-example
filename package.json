@@ -19,6 +19,7 @@
     "@basis-theory/eslint-config": "^1.0.13",
     "@codesandbox/sandpack-react": "^2.0.17",
     "@parcel/optimizer-data-url": "2.8.3",
+    "@parcel/packager-ts": "2.8.3",
     "@parcel/transformer-inline-string": "2.8.3",
     "@types/node": "^18.14.1",
     "eslint": "^7.32.0",
