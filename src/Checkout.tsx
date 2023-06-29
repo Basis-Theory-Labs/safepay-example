@@ -12,10 +12,12 @@ export const Checkout = () => {
 
   const submit = async () => {
     if (cardRef.current?.metadata?.complete) {
-      await bt.tokens.create({
+      const token = await bt.tokens.create({
         type: 'card',
         data: cardRef?.current,
       });
+      // TODO save token.id to your database
+      // TODO forward token data to any payment processor
     }
   };
 
