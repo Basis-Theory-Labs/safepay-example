@@ -25,7 +25,7 @@ export const Checkout = () => {
     <BasisTheoryProvider bt={bt}>
       <Typography variant="h2">Checkout</Typography>
       <Typography color="text.secondary" variant="body2">
-        Type in your credit card number.
+        Type in a credit card number.
       </Typography>
       <CustomCardElement id="my-card" ref={cardRef} />
       <Button color="primary" onClick={submit} variant="contained">
